@@ -43,6 +43,7 @@
     </section>
 
     @include('Partials.Script')
+    @include('Partials.Toastr')
 </body>
 
 </html>

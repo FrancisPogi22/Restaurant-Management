@@ -12,6 +12,7 @@
     @include('Templates.Banner')
 
     @include('Partials.Script')
+    @include('Partials.Toastr')
 </body>
 
 </html>
