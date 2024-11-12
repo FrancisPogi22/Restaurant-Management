@@ -3,7 +3,7 @@
 
 <head>
     @include('Partials.HeadPackage')
-    <link rel="stylesheet" href="{{ asset('assets/css/BannerPage.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/HomePage.css') }}">
 </head>
 
 <body>

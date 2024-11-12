@@ -1,5 +1,5 @@
 <section id="banner">
-    <div class="wrapper">
+    <div class="wrapper banner">
         <div class="video-container">
             <video autoplay loop muted src="{{ asset('assets/video/Banner_Backgroung_Video.mp4') }}"
                 class="background-video"></video>
