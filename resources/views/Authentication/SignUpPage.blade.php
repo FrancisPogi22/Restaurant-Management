@@ -22,9 +22,17 @@
                         <h5>Sign Up</h5>
                         <p>or <a href="{{ route('sign.in.page') }}">Sign In</a></p>
                     </div>
-                    <form action="" method="POST">
+                    <form action="{{ route('sign.up.user') }}" method="POST">
+                        @csrf
                         <div class="field-con">
-                            <input type="text" name="username" placeholder="Enter username" required>
+                            <select name="user_role" required>
+                                <option value="" selected hidden disabled>Select Role</option>
+                                <option value="2">Admin</option>
+                                <option value="3">Customer</option>
+                            </select>
+                        </div>
+                        <div class="field-con">
+                            <input type="text" name="username" placeholder="Enter username" max="255" required>
                         </div>
                         <div class="field-con">
                             <input type="email" name="email" placeholder="Enter email" required>
@@ -32,6 +40,10 @@
                         <div class="field-con">
                             <i class="bi bi-eye-slash togglePassword"></i>
                             <input type="password" name="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="field-con">
+                            <i class="bi bi-eye-slash togglePassword"></i>
+                            <input type="password" name="confirm_password" placeholder="Enter confirm password" required>
                         </div>
                         <div class="form-btn-container">
                             <button type="submit" name="submit" class="btn">Sign Up</button>

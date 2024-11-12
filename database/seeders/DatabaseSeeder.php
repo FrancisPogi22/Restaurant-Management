@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Categories;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,9 +14,13 @@ class DatabaseSeeder extends Seeder
     {
         User::create([
             'username' => 'Francis Pogi',
-            'user_role' => 4,
+            'user_role' => 2,
             'email' => 'francistengteng10@gmail.com',
             'password' => Hash::make('pogikotalaga22'),
+        ]);
+
+        Categories::create([
+            'category_name' => 'Coffee'
         ]);
     }
 }
